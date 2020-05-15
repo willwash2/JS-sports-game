@@ -22,11 +22,9 @@ teamOneShootButton.addEventListener("click", function () {
 
     if (Math.random() >= 0.5) {
         goalOne.innerHTML = teamOneNumGoals;
-    }
-
-    else {
         goalOne.innerHTML = teamOneNumGoals;
     }
+
 
 
 })
@@ -43,17 +41,13 @@ teamTwoShootButton.addEventListener("click", function () {
 
     if (Math.random() >= 0.5) {
         goalsTwo.innerHTML = teamTwoNumGoals;
-    }
-
-    else {
         goalsTwo.innerHTML = teamTwoNumGoals;
-
     }
 
 })
 
 resetButton.addEventListener("click", function () {
-
+    let resetButton = document.querySelector("#resetbutton")
 
     console.log("Reset button clicked");
     let resetFunction = Number(resetButton.innerHTML) + 1;
